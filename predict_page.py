@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 def load_model():
-    with open(r'C:\Users\berna\ml_salary2\models\model.pk1', 'rb') as file:
+    with open('model.pk1', 'rb') as file:
         data = pickle.load(file)
     return data
     
