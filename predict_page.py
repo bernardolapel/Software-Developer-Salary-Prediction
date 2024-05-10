@@ -3,7 +3,8 @@ import pickle
 import numpy as np
 
 def load_model():
-    data = pickle.load('model.pk')
+    with open('https://github.com/bernardolapel/Software-Developer-Salary-Prediction/blob/main/model.pk', rb) as file:
+        data = pickle.load(file)
     return data
     
 data = load_model()
